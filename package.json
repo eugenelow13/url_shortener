@@ -1,0 +1,31 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "homepage": "https://eugenelow13.github.io/url_shortener",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "git": "^0.1.5",
+    "mysql": "^2.18.1",
+    "save-dev": "^0.0.1-security",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
