@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This is for the character encoding -->
     <meta charset="UTF-8">
+    <!-- This is for IE compatibility -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- This is for mobile responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Get the title from the controller -->
     <title>URL Shortener</title>
+    <!-- Link to the CSS file -->
     <link rel="stylesheet" type="text/css" href="/styles/home.css" />
 </head>
 <body>
@@ -12,14 +17,18 @@
         <h2>URL Shortener</h2>
         <p>Your shortened URL is</p>
         <div class="result-container">
+            <!-- Get the shortened URL and displays it -->
             <span><a id="short-url" href="<%= `/${shortUrl}` %>" target="_blank"><%= shortUrl %></a></span>
             <span onclick="copyUrl()" class="copy-span" id="copy-action">Copy</span>
         </div>
+        <!-- Get the number of times the URL has been converted and displays them-->
         <p>It has been converted <%= times %> times</p>
         <br />
+        <!-- Link to the home page -->
         <a href="/"><span class="span-link">Try Another</span></a>
     </div>
     <script>
+        /* Copy the shortened URL to clipboard */
         const copyUrl = () => {
             const copyTextarea = document.getElementById("short-url").href;
             navigator.clipboard.writeText(copyTextarea);
