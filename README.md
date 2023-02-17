@@ -56,7 +56,11 @@ Note: by convention, these are default Apache and MySQL ports.
 ## Running the URL Shortener Application
 1) Open a terminal such as cmd and cd to C:\wamp64\www\
 2) git clone https://github.com/eugenelow13/url_shortener.git
-3) npm run dev
+3) npm init -y
+4) npm i express ejs mysql shortid
+5) npm i --save-dev nodemon
+6) npm run dev
+7) Open the web browser and type in localhost:5000 to run the application
 
 
 
